@@ -42,10 +42,12 @@ const loadGoals = async () => {
 document.getElementById('goalsForm').addEventListener('submit', async e => {
     e.preventDefault();
     const goals = {
+        userId: localStorage.getItem('userId'),
         calories: Number(document.getElementById('calories').value),
         proteins: Number(document.getElementById('proteins').value),
         fats: Number(document.getElementById('fats').value),
-        carbs: Number(document.getElementById('carbs').value)
+        carbs: Number(document.getElementById('carbs').value),
+        date: new Date().toISOString()
     };
 
     try {

@@ -14,20 +14,39 @@
   "goals": [
     {
       "userId": 1743582313303,
-      "calories": 3000,
+      "calories": 5000,
+      "proteins": 200,
+      "fats": 500,
+      "carbs": 550,
+      "date": "2025-04-03T13:52:54.387Z"
+    },
+    {
+      "userId": 1743582313303,
+      "calories": 200,
       "proteins": 20,
       "fats": 20,
-      "carbs": 20,
-      "id": 1
+      "carbs": 10,
+      "date": "2025-04-03T13:53:37.185Z"
     },
     {
       "userId": 1743682079140,
-      "calories": 5000,
-      "proteins": 200,
-      "fats": 50,
+      "calories": 2000,
+      "proteins": 500,
+      "fats": 200,
       "carbs": 100,
-      "id": 1
+      "date": "2025-04-03T13:54:27.894Z"
     }
   ],
-  "meals": []
+  "meals": [
+    {
+      "name": "test",
+      "calories": 500,
+      "proteins": 20,
+      "fats": 25,
+      "carbs": 50,
+      "date": "2025-04-03T13:54:51.326Z",
+      "userId": 1743682079140,
+      "id": 1743688491337
+    }
+  ]
 }

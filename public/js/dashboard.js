@@ -42,10 +42,12 @@ const updateProgressBars = (current, target) => {
         return Math.min((current / target) * 100, 100);
     };
     
-    // Maj de l'objectif le plus récent (id max)
+    // Select objectif le plus récent pour l'utilisateur connecté
     const latestGoal = Array.isArray(target) && target.length > 0 
         ? target.reduce((latest, goal) => {
-            return (!latest || goal.id > latest.id) ? goal : latest;
+            if (!latest) return goal;
+            if (goal.userId !== latest.userId) return latest;
+            return new Date(goal.date) > new Date(latest.date) ? goal : latest;
         }, null)
         : target;
     
