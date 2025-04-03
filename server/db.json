@@ -29,16 +29,5 @@
       "id": 1
     }
   ],
-  "meals": [
-    {
-      "userId": 1743582313303,
-      "name": "Pâtes",
-      "calories": 500,
-      "proteins": 20,
-      "fats": 20,
-      "carbs": 20,
-      "date": "2025-04-03T12:16:40.906Z",
-      "id": 1
-    }
-  ]
+  "meals": []
 }

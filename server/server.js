@@ -131,10 +131,12 @@ app.get('/api/meals', (req, res) => {
 
 // POST
 app.post('/api/meals', (req, res) => {
-    const userId = getUserId(req);
-    if (!userId) return res.status(401).json({ error: 'Unauthorized' });
-
-    const meal = { ...req.body, userId };
+    const userId = req.user.id;
+    const meal = { 
+        ...req.body, 
+        userId,
+        id: Date.now()
+    };
     const meals = router.db.get('meals');
     meals.push(meal).write();
     res.json(meal);

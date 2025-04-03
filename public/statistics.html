@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NutriTrack - Statistiques</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/dashboard.html">Tableau de bord</a></li>
+            <li><a href="/meals.html">Repas</a></li>
+            <li><a href="/goals.html">Objectifs</a></li>
+            <li><a href="/statistics.html">Statistiques</a></li>
+            <li><a href="#" id="logout">Déconnexion</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Statistiques</h1>
+        <div class="charts-container">
+            <div class="chart-card">
+                <h2>Calories par jour</h2>
+                <canvas id="caloriesChart"></canvas>
+            </div>
+            <div class="chart-card">
+                <h2>Répartition nutritionnelle</h2>
+                <canvas id="nutritionChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ramda@latest/dist/ramda.min.js"></script>
+    <script src="/js/statistics.js"></script>
+</body>
+</html>
