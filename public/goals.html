@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objectifs - Suivi Nutritionnel</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="dashboard.html">Tableau de bord</a></li>
+            <li><a href="goals.html">Objectifs</a></li>
+            <li><a href="meals.html">Repas</a></li>
+            <li><a href="#" id="logout">Déconnexion</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Définir vos objectifs</h1>
+        <form id="goalsForm">
+            <div class="form-group">
+                <label for="calories">Objectif calories (kcal)</label>
+                <input type="number" id="calories" required>
+            </div>
+            <div class="form-group">
+                <label for="proteins">Objectif protéines (g)</label>
+                <input type="number" id="proteins" required>
+            </div>
+            <div class="form-group">
+                <label for="fats">Objectif lipides (g)</label>
+                <input type="number" id="fats" required>
+            </div>
+            <div class="form-group">
+                <label for="carbs">Objectif glucides (g)</label>
+                <input type="number" id="carbs" required>
+            </div>
+            <button type="submit">Sauvegarder les objectifs</button>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/ramda@0.28.0/dist/ramda.min.js"></script>
+    <script src="js/goals.js"></script>
+</body>
+</html>

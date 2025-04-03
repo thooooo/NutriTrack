@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de bord - Suivi Nutritionnel</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="dashboard.html">Tableau de bord</a></li>
+            <li><a href="goals.html">Objectifs</a></li>
+            <li><a href="meals.html">Repas</a></li>
+            <li><a href="#" id="logout">Déconnexion</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Tableau de bord</h1>
+        <div class="progress-cards">
+            <div class="card">
+                <h3>Calories</h3>
+                <div class="progress-bar">
+                    <div id="caloriesProgress" class="progress"></div>
+                </div>
+                <p><span id="currentCalories">0</span> / <span id="targetCalories">0</span> kcal</p>
+            </div>
+            <div class="card">
+                <h3>Protéines</h3>
+                <div class="progress-bar">
+                    <div id="proteinsProgress" class="progress"></div>
+                </div>
+                <p><span id="currentProteins">0</span> / <span id="targetProteins">0</span> g</p>
+            </div>
+            <div class="card">
+                <h3>Lipides</h3>
+                <div class="progress-bar">
+                    <div id="fatsProgress" class="progress"></div>
+                </div>
+                <p><span id="currentFats">0</span> / <span id="targetFats">0</span> g</p>
+            </div>
+            <div class="card">
+                <h3>Glucides</h3>
+                <div class="progress-bar">
+                    <div id="carbsProgress" class="progress"></div>
+                </div>
+                <p><span id="currentCarbs">0</span> / <span id="targetCarbs">0</span> g</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/ramda@0.28.0/dist/ramda.min.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

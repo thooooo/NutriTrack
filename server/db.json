@@ -1,0 +1,44 @@
+{
+  "users": [
+    {
+      "id": 1743582313303,
+      "email": "test@gmail.com",
+      "password": "$2a$10$aP6ntX7B9.iqNpZa/VwP/eLnOtyIUk8vzpMoqoxhHYI2R/QnvJ7jm"
+    },
+    {
+      "id": 1743682079140,
+      "email": "test2@gmail.com",
+      "password": "$2a$10$cx.8MLngDkceq0DmybAVyOIA65fzIuwQc9dvSvBc0Pr5jzQYv9Lxi"
+    }
+  ],
+  "goals": [
+    {
+      "userId": 1743582313303,
+      "calories": 3000,
+      "proteins": 20,
+      "fats": 20,
+      "carbs": 20,
+      "id": 1
+    },
+    {
+      "userId": 1743682079140,
+      "calories": 5000,
+      "proteins": 200,
+      "fats": 50,
+      "carbs": 100,
+      "id": 1
+    }
+  ],
+  "meals": [
+    {
+      "userId": 1743582313303,
+      "name": "Pâtes",
+      "calories": 500,
+      "proteins": 20,
+      "fats": 20,
+      "carbs": 20,
+      "date": "2025-04-03T12:16:40.906Z",
+      "id": 1
+    }
+  ]
+}
